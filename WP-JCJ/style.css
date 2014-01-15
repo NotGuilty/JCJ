@@ -1,0 +1,617 @@
+/*
+Theme Name: JCJ Transparent
+Theme URI: http://jazzclubjury.com
+Description: JCJ with a bit of Foundation
+Author: Hash Varsani
+Author URI: http://hashvarsani.com
+Template: wp-forge
+Version: v5.0.2
+*/
+
+/* Make sure to view the readme.txt file for proper installation. */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Montserrat);
+@import url("../wp-forge/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+/* =Basic structure
+-------------------------------------------------------------- */
+
+/* Body, links, basics */
+
+body {
+	background-color:rgba(54,76,106,0.55);
+	text-rendering: optimizeLegibility;
+	-ms-word-wrap: normal;
+	word-wrap: normal;
+}
+
+.row {
+	background-color:rgba(255,255,255,0);
+}
+
+#wrapper {
+	width:100%;
+	max-width: 62.5rem;
+	margin:1.5rem auto;
+	box-shadow: 0 0px 0px rgba(100, 100, 100, 0.3);
+	background:rgba(255,255,255,0);
+	padding:0px;
+}
+
+/*
+#background {
+	background-color:rgba(54,76,106,0.55);
+
+}
+*/
+/* Header */
+
+#header {
+	margin-bottom:0rem;
+}
+.header-logo, .header-info {
+	display:inline;
+	float:right;
+}
+
+#ad {
+	float: right;
+
+}
+
+.site-header {
+	width:100%;
+	background: transparent;
+}
+.site-title a {
+	color: #515151;
+	display: block;	
+	text-decoration: none;
+}
+.site-title a:hover {
+	color: #21759b!important;
+}
+.site-header h1 {
+	margin:0!important;
+}
+.site-header h2 {
+	color: #757575;
+	margin:0!important;
+	line-height:1	
+}
+img.header-image {/* Remove fancy borders */
+	border-radius: 0!important;
+	box-shadow:none!important;
+}
+
+/* Navigation */
+.navcontainer {
+	margin-bottom:1.875em;
+}
+
+.top-bar {
+    background: rgba(59, 59, 59, 0.43);
+}
+
+.top-bar-section ul li > a {
+    display: block;
+    width: 100%;
+    color: white;
+    padding: 12px 0px 12px 10px;
+    font-size: 0.9em;
+    font-family: 'Montserrat', sans-serif;
+  	font-weight: 400;
+  	color: #ffffff;
+	text-transform: uppercase;
+    background: none repeat scroll 0% 0% rgb(51, 51, 51);
+    height: 45px;
+}
+
+.breadcrumbs {
+    display: block;
+    padding: 0.5625rem 0.875rem;
+    overflow: hidden;
+    margin-left: 0px;
+    list-style: none outside none;
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgba(54,76,106,0.55);
+    border-color: rgb(218, 218, 218);
+    border-radius: 0px;
+}
+
+.breadcrumbs > * a, .breadcrumbs > * span {
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: 600;
+font-size: 0.95em;
+    text-transform: uppercase;
+    color: rgba(121,0,0,1);
+    text-decoration: none;
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+    border-radius: 0px;
+    font-family: inherit;
+    border: 1px solid rgb(204, 204, 204);
+    color: rgba(0, 0, 0, 0.75);
+    display: block;
+    font-size: 0.875rem;
+    margin: 0px 0px 1rem;
+    padding: 0.5rem;
+    height: 2.3125rem;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    transition: box-shadow 0.45s ease 0s, border-color 0.45s ease-in-out 0s;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset;
+    background-color: rgba(54,76,106,0.55);
+}
+/**********************/
+/*! Links and Hovers  */
+/**********************/
+
+.top-bar-section ul li.active > a {
+  background: #09848c;
+  color: white;
+}
+
+.top-bar-section ul li.active > a:hover {
+  background: #0a8e97;
+}
+
+a {
+color: white!important;
+line-height: inherit;
+text-decoration: none;
+transition: background-color 200ms  ease-in-out 0ms;
+-webkit-transition: color 200ms  ease-in-out 0s;
+-moz-transition: color 200ms  ease-in-out 0s;
+}
+
+a:hover {
+color: #09848c!important;
+line-height: inherit;
+text-decoration: none;
+}
+
+/**********************/
+/***   Typography   ***/
+/**********************/
+
+body {
+color: #fff;
+cursor: default;
+font-family: 'Source Sans Pro', sans-serif;
+font-style: normal;
+font-weight: 300;
+line-height: 1;
+}
+
+p {
+font-family: 'Source Sans Pro', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 0.85em;
+color: #fff;
+text-transform: none;
+text-decoration: none;
+letter-spacing: 0.035em;
+word-spacing: 0.017em;
+line-height: 1.5;
+}
+
+h1 {
+font-size: 1.80em;
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+text-transform: uppercase;
+letter-spacing: -0.02em;
+color: #fff;
+}
+
+
+.entry-header h2 {
+	font-size: 1.65em;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+	line-height: 1.0em;
+}
+
+h2 {
+font-size: 1.65em;
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+text-transform: uppercase;
+letter-spacing: -0.02em;
+}
+
+.home-title{
+font-size: 1.65em;
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+color: white;
+text-transform: uppercase;
+letter-spacing: -0.02em;
+}
+h3 {
+font-size: 1.35em;
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+color: white;
+text-transform: uppercase;
+letter-spacing: -0.02em;
+}
+
+h4 {
+font-size: 1.04em;
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+color: white;
+text-transform: capitalize;
+letter-spacing: -0.02em;
+}
+
+h5 {
+font-size: 0.90em;
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+color: white;
+text-transform: uppercase;
+letter-spacing: -0.02em;
+}
+h6 {
+font-size: 0.60em;
+font-family: 'Montserrat', sans-serif;
+font-weight: normal;
+color: #08828b;
+text-transform: uppercase;
+line-height: 1.2125em;
+letter-spacing: 0.05em;
+margin-bottom: 0.90em;
+margin-top: -0.10em;
+text-rendering: optimizelegibility;
+}
+#home.h6 {
+	font-size: 0.60em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: #8a8888;
+    text-transform: uppercase;
+    line-height: 1.2125em;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.90em;
+    margin-top: -0.10em;
+    text-rendering: optimizelegibility;
+}
+
+/***********************/
+/***  Featured post  ***/
+/***********************/
+
+#featured{
+	background: none;
+	padding: 0px 12px 0px 0px;
+	margin-bottom: -10px;
+}
+
+/*
+#featured-club {
+margin: 14px 0px 0px 0px;
+background: rgba(54,76,106,0.55);
+padding: 0px
+}
+*/
+
+#featuredcity.h5  {
+	font-size: 0.65em;
+	position: absolute; 
+	top: 20px; 
+	left: 0px;
+	width: 100%; 
+}
+#featuredcity.h5 span { 
+   position: inline; 
+   color: white;   
+   background: rgba(9,132,140,1); /* fallback color */
+   background: rgba(9,132,140, 0.8);
+   padding: 5px; 
+}
+
+/****************/
+/***   Maps   ***/
+/****************/
+
+#map-container {
+color:#FFF;
+width:100%;
+text-align:center;
+height:350px;
+background-color:#000;
+padding: 0px;
+margin:0 10px 0 10px;
+clear: both;
+}
+
+#map-container-huge {
+color:#FFF;
+width:100%;
+text-align:center;
+height:350px;
+background-color:#000;
+padding: 0px;
+margin:0 10px 0 10px;
+clear: both;
+}
+/*********************/
+/***   Jazz Club   ***/
+/*********************/
+
+/*
+#club-post {
+margin: 14px 0px 0px 0px;
+background: rgba(54,76,106,0.55);
+padding: 15px
+}
+*/
+
+.club {
+float: left;
+width: 200px;
+margin: 0px 12px 0px 0px;
+background: transparent;
+}
+
+.club h4 {
+	margin: -30px 0px 0px 0px
+}
+
+.club h5 {
+	font-size: 0.65em;
+	position: relative; 
+	top: -46px;
+	left: 0px;
+	width: 100%; 
+}
+
+.club h5 span { 
+   position: inline; 
+   color: white;   
+   background: rgba(9,132,140,1); /* fallback color */
+   background: rgba(9,132,140, 0.6);
+   padding: 5px; 
+}
+.club h6 {
+	font-size: 0.60em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: #8a8888;
+    text-transform: uppercase;
+    line-height: 1.2125em;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.90em;
+    margin-top: 0.90em;
+    text-rendering: optimizelegibility;
+}
+
+/*********************/
+/***   Jazz Fest   ***/
+/*********************/
+
+/*
+#fest-post {
+margin: 14px 0px 0px 0px;
+background: rgba(54,76,106,0.55);
+padding: 15px
+}
+*/
+
+.fest {
+float: left;
+width: 200px;
+margin: 0px 12px 0px 0px;
+background: transparent;
+}
+
+.fest h4 {
+	margin: -30px 0px 0px 0px
+}
+.fest h5 {
+	font-size: 0.65em;
+	position: relative; 
+	top: -46px;
+	left: 0px;
+	width: 100%; 
+}
+
+.fest h5 span { 
+   position: inline; 
+   color: white;   
+   background: rgba(9,132,140,1); /* fallback color */
+   background: rgba(9,132,140, 0.6);
+   padding: 5px; 
+}
+.fest h6 {
+	font-size: 0.60em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: #8a8888;
+    text-transform: uppercase;
+    line-height: 1.2125em;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.90em;
+    margin-top: 0.90em;
+    text-rendering: optimizelegibility;
+}
+
+/************************/
+/***   Jazz Journal   ***/
+/************************/
+
+/*
+#journal-post {
+margin: 14px 0px 0px 0px;
+background: rgba(54,76,106,0.55);
+padding: 15px
+}
+*/
+.jazz-journal {
+float: left;
+width: 200px;
+margin: 0px 12px 0px 0px;
+background: transparent;
+}
+
+.jazz-journal h4 {
+	margin: -30px 0px 0px 0px
+}
+
+.jazz-journal h5 {
+	font-size: 0.65em;
+	position: relative; 
+	top: -46px;
+	left: 0px;
+	width: 100%; 
+}
+
+.jazz-journal h5 span { 
+   position: inline; 
+   color: white;   
+   background: rgba(9,132,140,1); /* fallback color */
+   background: rgba(9,132,140, 0.6);
+   padding: 5px; 
+}
+.jazz-journal h6 {
+	font-size: 0.60em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: #8a8888;
+    text-transform: uppercase;
+    line-height: 1.2125em;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.90em;
+    margin-top: 0.90em;
+    text-rendering: optimizelegibility;
+}
+
+/* =Front page template
+-------------------------------------------------------------- */
+.template-front-page .widget-area {
+	clear: both;
+	float: none;
+	width: auto;
+	padding-top: 1.5rem;
+	border-top: 0px solid #ededed;
+}
+
+/**********************/
+/*		Widgets		  */
+/**********************/
+
+/* Social Icons */
+#simple-social-icons-4
+{
+background:none !important;
+border: none !important;
+float: none;
+list-style-type: none !important;
+margin: 0px 2px 14px auto;
+padding: 0 !important;
+}
+
+/*
+#secondary{
+
+	background-color: rgba(0,0,0,0.75); 
+padding: 35px 0px 0px 0px;
+margin-bottom: 60px;
+    
+
+}
+*/
+.template-front-page .widget-area {
+    clear: both;
+    float: none;
+    width: auto;
+    padding: 13px
+    border: 0px solid rgb(237, 237, 237);
+}
+
+/* Twitter */
+.widget_twitter li {
+font-size: 12px;
+color: #898787;
+list-style-type: none;
+margin-bottom: 15px;
+line-height: 19px;
+}
+
+/* Twitter */
+.widget_twitter .intent-meta a {
+display: inline;
+padding: 3px;
+background-color: #434343;
+color: #8a8888;
+-webkit-border-radius: 1px;
+-moz-border-radius: 1px;
+border-radius: 1px;
+margin-right: 5px;
+margin-top: 5px;
+font-size: 11px;
+}
+.widget_twitter .intent-meta a:hover {
+background-color: #08828b;
+color: white;
+text-decoration: none;
+transition: background-color 300ms ease-in-out 0ms;
+-webkit-transition: background-color 300ms ease-in-out 0ms;
+-moz-transition: background-color 300ms ease-in-out 0ms;
+}
+.widget-title {
+    font:
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+.widget-area .widget ul ul {
+	margin-left: 12px;
+}
+.widget_rss li {
+	margin: 12px 0;
+}
+.widget_recent_entries .post-date,
+.widget_rss .rss-date {
+	color: #aaa;
+	margin-left: 12px;
+}
+#wp-calendar {
+	margin: 0;
+	width: 100%;
+	font-size: 0.875rem;
+	line-height: 1.846153846;
+	color: #686868;
+}
+#wp-calendar th,
+#wp-calendar td,
+#wp-calendar caption {
+	text-align: left;
+}
+#wp-calendar #next {
+	padding-right: 1.5rem;
+	text-align: right;
+}
+.widget_search label {
+	display: block;
+	line-height: 1.846153846;
+	display:none!important;
+}
+/*
+.widget_twitter li {
+	list-style-type: none;
+}
+.widget_twitter .timesince {
+	display: block;
+	text-align: right;
+}
+*/
